@@ -41,13 +41,6 @@ wget https://github.com/openresty/lua-nginx-module/archive/v0.10.5.tar.gz -O lua
 tar -xvf lua-nginx-module-0.10.5.tar.gz 
 ```
 
-### Lua
-
-```shell
-sudo apt-get install -y lua5.1 liblua5.1-0 liblua5.1-0-dev
-sudo ln -s /usr/lib/x86_64-linux-gnu/liblua5.1.so /usr/lib/liblua.so
-```
-
 ### LuaJIT
 
 ```shell
@@ -62,8 +55,8 @@ sudo make install
 
 ```shell
 wget http://nginx.org/download/nginx-1.10.0.tar.gz?_ga=1.119827723.2067433858.1455285763 -O nginx-1.10.0.tar.gz
-tar -xvf nginx.tar.gz
-cd nginx-1.10.0.tar.gz
+tar -xvf nginx-1.10.0.tar.gz
+cd nginx-1.10.0/
 
 env LUAJIT_LIB=/usr/local/lib \
 LUAJIT_INC=/usr/local/include/luajit-2.0 \
